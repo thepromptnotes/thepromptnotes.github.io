@@ -178,10 +178,34 @@ layout: default
 </div>
 
 <style>
+    /* Background Wallpaper */
+    body {
+        background-image: url('/images/wallpaper.png');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    /* Semi-transparent overlay for content sections */
+    .content-series, .recent-exciting, .archive-section {
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        padding: 2em;
+        margin-bottom: 2em;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
     .home-header {
         margin-bottom: 3em;
         padding-bottom: 2em;
         border-bottom: 1px solid #eee;
+        background-color: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        padding: 2em;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
     
     .site-description {
@@ -190,9 +214,9 @@ layout: default
         margin-top: 0.5em;
     }
     
-    /* Section Styling */
+    /* Section Styling - Updated for layered background */
     .content-series, .recent-exciting, .archive-section {
-        margin-bottom: 4em;
+        margin-bottom: 2em;
     }
     
     .content-series h2, .recent-exciting h2, .archive-section h2 {
