@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Debug Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .test-section {
+            margin: 2em 0;
+            padding: 1em;
+            border: 2px solid #333;
+        }
+        .test-image {
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+            margin: 1em 0;
+        }
+        .debug-info {
+            background: #f0f0f0;
+            padding: 1em;
+            margin: 1em 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Image Debug Test</h1>
+    
+    <div class="test-section">
+        <h2>Direct Image Test</h2>
+        <p>Testing if images load directly:</p>
+        <img src="https://thepromptnotes.github.io/images/ai-infrastructure-thumbnail.png" 
+             alt="AI Infrastructure" class="test-image">
+        <div class="debug-info">
+            URL: https://thepromptnotes.github.io/images/ai-infrastructure-thumbnail.png<br>
+            Expected: 400x200 PNG image
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>CSS Object-Fit Test</h2>
+        <p>Testing with object-fit: cover (like the blog):</p>
+        <div style="width: 400px; height: 200px; overflow: hidden; background: #f5f5f5; border: 2px solid blue;">
+            <img src="https://thepromptnotes.github.io/images/ai-infrastructure-thumbnail.png" 
+                 alt="AI Infrastructure" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="debug-info">
+            CSS: width: 100%; height: 100%; object-fit: cover;<br>
+            Container: 400x200px with overflow: hidden
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>All Thumbnails Test</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em;">
+            <div>
+                <img src="https://thepromptnotes.github.io/images/ai-infrastructure-thumbnail.png" 
+                     alt="AI Infrastructure" style="width: 100%; height: 100px; object-fit: cover; border: 1px solid #ccc;">
+                <p>AI Infrastructure</p>
+            </div>
+            <div>
+                <img src="https://thepromptnotes.github.io/images/ai-translators-thumbnail.png" 
+                     alt="AI Translators" style="width: 100%; height: 100px; object-fit: cover; border: 1px solid #ccc;">
+                <p>AI Translators</p>
+            </div>
+            <div>
+                <img src="https://thepromptnotes.github.io/images/temporal-coherence-thumbnail.png" 
+                     alt="Temporal Coherence" style="width: 100%; height: 100px; object-fit: cover; border: 1px solid #ccc;">
+                <p>Temporal Coherence</p>
+            </div>
+            <div>
+                <img src="https://thepromptnotes.github.io/images/computer-vision-thumbnail.png" 
+                     alt="Computer Vision" style="width: 100%; height: 100px; object-fit: cover; border: 1px solid #ccc;">
+                <p>Computer Vision</p>
+            </div>
+            <div>
+                <img src="https://thepromptnotes.github.io/images/ai-brain-thumbnail.png" 
+                     alt="AI Brain" style="width: 100%; height: 100px; object-fit: cover; border: 1px solid #ccc;">
+                <p>AI Brain</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Browser Console Check</h2>
+        <p>Open browser developer tools (F12) and check the Console tab for any errors.</p>
+        <p>Also check the Network tab to see if images are loading with 200 status codes.</p>
+    </div>
+</body>
+</html>
