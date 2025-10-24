@@ -21,7 +21,7 @@ PromptNotes is a platform focused on AI applications for the entertainment and V
 
 ## Contact
 
-- GitHub: [github.com/promptnotes-io](https://github.com/promptnotes-io)
+- GitHub: [github.com/thepromptnotes](https://github.com/thepromptnotes)
 - Website: [promptnotes.io](https://promptnotes.io)
 - Email: hello@promptnotes.io
 

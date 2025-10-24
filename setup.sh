@@ -13,9 +13,9 @@ if ! command -v git &> /dev/null; then
     exit 1
 fi
 
-# Use promptnotes-io organization
-github_username="promptnotes-io"
-echo "Using GitHub organization: $github_username"
+# Use thepromptnotes username
+github_username="thepromptnotes"
+echo "Using GitHub username: $github_username"
 
 # Repository name
 repo_name="${github_username}.github.io"

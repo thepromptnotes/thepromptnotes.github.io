@@ -3,7 +3,7 @@ title: "PromptNotes"  # Blog name
 author: "PromptNotes"  # Author name
 description: "Thoughts on AI, VFX, and the Future of Entertainment"
 baseurl: ""  # Leave empty unless your site is in a subdirectory
-url: "https://promptnotes-io.github.io"  # GitHub organization URL
+url: "https://thepromptnotes.github.io"  # GitHub Pages URL
 
 # Build settings
 markdown: kramdown
