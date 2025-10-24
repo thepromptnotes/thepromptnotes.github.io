@@ -27,7 +27,7 @@ This document provides prompts and summaries for generating visual thumbnails fo
 
 **Image Prompt:**
 ```
-Create a clean, technical diagram showing a pipeline architecture. Use geometric shapes (rectangles and squares) in muted blue tones (#2196f3, #1976d2, #1565c0) arranged horizontally. Show 4-5 connected modules representing different stages of a VFX pipeline. Include small arrows between modules to show data flow. Add subtle grid lines in the background. The overall composition should suggest infrastructure and systematic processing. Use clean, minimal design with no text overlays. The image should convey the concept of "pipeline integration" and "systematic workflow."
+blue rectangular blocks connected by arrows, pipeline diagram, minimalist, clean lines, technical illustration, flat design, white background, geometric shapes, systematic workflow, infrastructure visualization
 ```
 
 ### 2. "Stop Hiring 'AI Artists' — You Need AI Translators"
@@ -36,7 +36,7 @@ Create a clean, technical diagram showing a pipeline architecture. Use geometric
 
 **Image Prompt:**
 ```
-Create a visual representation of communication and translation between different groups. Use three circles in purple tones (#9c27b0, #7b1fa2, #6a1b9a) representing different team members or roles. Connect them with dashed lines or communication pathways. Include small icons or symbols representing "translation" or "bridging" - perhaps small arrows or connection symbols. Use a clean, minimal design with muted background. The composition should suggest collaboration, communication, and the role of translators in connecting different worlds. Avoid text overlays and focus on visual metaphors for translation and communication.
+three circles connected by lines, communication diagram, purple and blue tones, minimalist, clean design, team collaboration, translation symbols, flat illustration, white background, geometric connections
 ```
 
 ### 3. "Building a Temporal Coherence Pipeline That Producers Understand"
@@ -45,7 +45,7 @@ Create a visual representation of communication and translation between differen
 
 **Image Prompt:**
 ```
-Create a visual representation of temporal coherence and frame consistency. Use 6-8 rectangular frames in green tones (#4caf50, #388e3c, #2e7d32) arranged horizontally. Show consistency by using similar colors and patterns across frames. Include subtle connecting lines or pathways above the frames to represent temporal flow. Add small frame numbers (1, 2, 3, etc.) below each frame. The overall design should suggest video frames, time progression, and consistency. Use clean geometric shapes with no text overlays. The image should convey the concept of "frame consistency" and "temporal flow."
+six rectangular frames in sequence, video timeline, green tones, temporal flow, minimalist, clean lines, frame consistency, flat design, white background, geometric progression
 ```
 
 ### 4. "The Visual Language of AI: How Computer Vision Translates to VFX Production"
@@ -54,7 +54,7 @@ Create a visual representation of temporal coherence and frame consistency. Use 
 
 **Image Prompt:**
 ```
-Create a technical diagram representing computer vision processing pipeline. Use 4 rectangular modules in orange tones (#ff9800, #f57c00, #ef6c00) arranged horizontally. Each module should have a different visual treatment to represent different processing stages (input, preprocessing, feature extraction, classification). Include arrows between modules showing data flow. Add subtle technical elements like small geometric patterns or processing symbols within each module. Use clean, minimal design with muted background. The image should convey "data processing," "visual analysis," and "systematic workflow." Avoid text overlays and focus on visual representation of the processing pipeline.
+four rectangular modules with arrows, computer vision pipeline, orange tones, data processing, minimalist, clean lines, technical diagram, flat design, white background, systematic workflow
 ```
 
 ### 5. "The AI Brain: How Intelligence Processes Visual Data in VFX Production"
@@ -63,7 +63,7 @@ Create a technical diagram representing computer vision processing pipeline. Use
 
 **Image Prompt:**
 ```
-Create a visual representation of AI brain processing and neural networks. Use a central circular or brain-like shape in teal tones (#009688, #00796b, #00695c) with radiating connections or neural pathways. Include smaller nodes or processing elements connected by lines or pathways. Add subtle visual elements suggesting data flow, processing, and intelligence. Use clean, minimal design with muted background. The composition should suggest "neural processing," "intelligence," and "data flow." Include geometric patterns or network-like structures. Avoid text overlays and focus on visual metaphors for AI processing and intelligence.
+central circle with radiating connections, neural network diagram, teal tones, brain processing, minimalist, clean lines, node connections, flat design, white background, geometric network
 ```
 
 ## Additional Image Prompts for Future Posts
