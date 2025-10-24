@@ -4,6 +4,7 @@ title: "Stop Hiring 'AI Artists' — You Need AI Translators"
 date: 2024-10-25
 categories: [AI, VFX, Team Building, Communication]
 excerpt: "The communication breakdown between creatives and engineers is costing studios millions. Here's how to build teams that speak both languages."
+thumbnail_image: /images/ai-translators-thumbnail.png
 ---
 
 Last week, I watched a compositor spend three hours trying to explain to an AI engineer why a "perfect" AI-generated background didn't work for their shot. The engineer kept pointing to technical metrics—pixel accuracy, semantic similarity scores, perceptual loss values. The compositor kept saying, "It just doesn't feel right."

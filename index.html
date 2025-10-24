@@ -8,37 +8,173 @@ layout: default
         <p class="site-description">{{ site.description }}</p>
     </header>
     
-    <section class="recent-posts">
-        <h2>Recent Posts</h2>
-        <ul class="post-list">
-            {% for post in site.posts limit:10 %}
-            <li class="post-item">
-                <article>
-                    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-                    <h3 class="post-title">
-                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    </h3>
-                    {% if post.excerpt %}
-                    <div class="post-excerpt">
-                        {{ post.excerpt | strip_html | truncate: 200 }}
-                    </div>
+    <!-- Recent Exciting Things -->
+    <section class="recent-exciting">
+        <h2>Recent Exciting Things!</h2>
+        <div class="post-grid">
+            {% for post in site.posts limit:3 %}
+            <div class="post-thumbnail">
+                <div class="thumbnail-image">
+                    {% if post.thumbnail_image %}
+                        <img src="{{ post.thumbnail_image }}" alt="{{ post.title }}" />
+                    {% else %}
+                        <div class="placeholder-thumbnail">
+                            <div class="thumbnail-content">
+                                {% if post.categories contains 'AI' %}
+                                    <div class="ai-icon">🧠</div>
+                                {% elsif post.categories contains 'VFX' %}
+                                    <div class="vfx-icon">🎬</div>
+                                {% elsif post.categories contains 'Pipeline' %}
+                                    <div class="pipeline-icon">⚙️</div>
+                                {% else %}
+                                    <div class="default-icon">📝</div>
+                                {% endif %}
+                            </div>
+                        </div>
                     {% endif %}
-                    {% if post.cover_image %}
-                    <div class="post-cover">
-                        <img src="{{ post.cover_image }}" alt="{{ post.title }}" />
+                </div>
+                <div class="thumbnail-content">
+                    <h3 class="thumbnail-title">{{ post.title }}</h3>
+                    <p class="thumbnail-subtitle">{{ post.date | date: "%B %Y" }}</p>
+                </div>
+                <a href="{{ post.url | relative_url }}" class="thumbnail-link"></a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- AI Infrastructure Series -->
+    <section class="content-series">
+        <h2>AI Infrastructure</h2>
+        <p class="series-description">The unsexy problems that cost millions</p>
+        <div class="post-grid">
+            {% for post in site.posts %}
+                {% if post.categories contains 'Infrastructure' %}
+                <div class="post-thumbnail">
+                    <div class="thumbnail-image">
+                        {% if post.thumbnail_image %}
+                            <img src="{{ post.thumbnail_image }}" alt="{{ post.title }}" />
+                        {% else %}
+                            <div class="placeholder-thumbnail infrastructure">
+                                <div class="thumbnail-content">
+                                    <div class="infrastructure-icon">🏗️</div>
+                                </div>
+                            </div>
+                        {% endif %}
                     </div>
-                    {% endif %}
-                </article>
+                    <div class="thumbnail-content">
+                        <h3 class="thumbnail-title">{{ post.title }}</h3>
+                        <p class="thumbnail-subtitle">{{ post.date | date: "%B %Y" }}</p>
+                    </div>
+                    <a href="{{ post.url | relative_url }}" class="thumbnail-link"></a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- Human Side of ML Series -->
+    <section class="content-series">
+        <h2>The Human Side of Machine Learning</h2>
+        <p class="series-description">Bridge between artists and algorithms</p>
+        <div class="post-grid">
+            {% for post in site.posts %}
+                {% if post.categories contains 'Team Building' or post.categories contains 'Communication' %}
+                <div class="post-thumbnail">
+                    <div class="thumbnail-image">
+                        {% if post.thumbnail_image %}
+                            <img src="{{ post.thumbnail_image }}" alt="{{ post.title }}" />
+                        {% else %}
+                            <div class="placeholder-thumbnail human">
+                                <div class="thumbnail-content">
+                                    <div class="human-icon">👥</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="thumbnail-content">
+                        <h3 class="thumbnail-title">{{ post.title }}</h3>
+                        <p class="thumbnail-subtitle">{{ post.date | date: "%B %Y" }}</p>
+                    </div>
+                    <a href="{{ post.url | relative_url }}" class="thumbnail-link"></a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- Technical Deep Dives Series -->
+    <section class="content-series">
+        <h2>Technical Deep Dives</h2>
+        <p class="series-description">Engineering excellence with strategic purpose</p>
+        <div class="post-grid">
+            {% for post in site.posts %}
+                {% if post.categories contains 'Technical' %}
+                <div class="post-thumbnail">
+                    <div class="thumbnail-image">
+                        {% if post.thumbnail_image %}
+                            <img src="{{ post.thumbnail_image }}" alt="{{ post.title }}" />
+                        {% else %}
+                            <div class="placeholder-thumbnail technical">
+                                <div class="thumbnail-content">
+                                    <div class="technical-icon">⚡</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="thumbnail-content">
+                        <h3 class="thumbnail-title">{{ post.title }}</h3>
+                        <p class="thumbnail-subtitle">{{ post.date | date: "%B %Y" }}</p>
+                    </div>
+                    <a href="{{ post.url | relative_url }}" class="thumbnail-link"></a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- Computer Vision Series -->
+    <section class="content-series">
+        <h2>Computer Vision in VFX</h2>
+        <p class="series-description">How AI sees and processes visual data</p>
+        <div class="post-grid">
+            {% for post in site.posts %}
+                {% if post.categories contains 'Computer Vision' %}
+                <div class="post-thumbnail">
+                    <div class="thumbnail-image">
+                        {% if post.thumbnail_image %}
+                            <img src="{{ post.thumbnail_image }}" alt="{{ post.title }}" />
+                        {% else %}
+                            <div class="placeholder-thumbnail vision">
+                                <div class="thumbnail-content">
+                                    <div class="vision-icon">👁️</div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="thumbnail-content">
+                        <h3 class="thumbnail-title">{{ post.title }}</h3>
+                        <p class="thumbnail-subtitle">{{ post.date | date: "%B %Y" }}</p>
+                    </div>
+                    <a href="{{ post.url | relative_url }}" class="thumbnail-link"></a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    
+    <!-- All Posts Archive -->
+    <section class="archive-section">
+        <h2>All Posts</h2>
+        <ul class="archive-list">
+            {% for post in site.posts %}
+            <li class="archive-item">
+                <span class="archive-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                <a href="{{ post.url | relative_url }}" class="archive-title">{{ post.title }}</a>
             </li>
             {% endfor %}
         </ul>
     </section>
-    
-    {% if site.posts.size > 10 %}
-    <div class="more-posts">
-        <a href="/archive">View all posts →</a>
-    </div>
-    {% endif %}
 </div>
 
 <style>
@@ -54,25 +190,171 @@ layout: default
         margin-top: 0.5em;
     }
     
-    .recent-posts h2 {
-        font-size: 1.3em;
-        margin-bottom: 1.5em;
-        color: #555;
+    /* Section Styling */
+    .content-series, .recent-exciting, .archive-section {
+        margin-bottom: 4em;
     }
     
-    .post-cover img {
-        margin-top: 1em;
-        border-radius: 4px;
-        max-height: 200px;
+    .content-series h2, .recent-exciting h2, .archive-section h2 {
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+        color: #333;
+    }
+    
+    .series-description {
+        color: #666;
+        font-size: 1em;
+        margin-bottom: 2em;
+        font-style: italic;
+    }
+    
+    /* Post Grid Layout */
+    .post-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2em;
+        margin-bottom: 2em;
+    }
+    
+    /* Post Thumbnail Boxes */
+    .post-thumbnail {
+        position: relative;
+        border: 2px solid #333;
+        background: white;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+    }
+    
+    .post-thumbnail:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .thumbnail-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    /* Thumbnail Images */
+    .thumbnail-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: #f5f5f5;
+    }
+    
+    .thumbnail-image img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
     
-    .more-posts {
-        margin-top: 2em;
-        text-align: center;
+    .placeholder-thumbnail {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
     }
     
-    .more-posts a {
-        font-weight: 500;
+    .placeholder-thumbnail.infrastructure {
+        background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    }
+    
+    .placeholder-thumbnail.human {
+        background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    }
+    
+    .placeholder-thumbnail.technical {
+        background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+    }
+    
+    .placeholder-thumbnail.vision {
+        background: linear-gradient(135deg, #fff3e0 0%, #ffcc02 100%);
+    }
+    
+    .thumbnail-content {
+        padding: 1em;
+    }
+    
+    .thumbnail-title {
+        font-size: 1.1em;
+        margin: 0 0 0.5em 0;
+        color: #333;
+        line-height: 1.3;
+    }
+    
+    .thumbnail-subtitle {
+        font-size: 0.9em;
+        color: #666;
+        margin: 0;
+    }
+    
+    /* Icon Styling */
+    .ai-icon, .vfx-icon, .pipeline-icon, .default-icon,
+    .infrastructure-icon, .human-icon, .technical-icon, .vision-icon {
+        font-size: 3em;
+        opacity: 0.7;
+    }
+    
+    /* Archive Section */
+    .archive-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .archive-item {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .archive-item:last-child {
+        border-bottom: none;
+    }
+    
+    .archive-date {
+        color: #999;
+        font-size: 0.9em;
+        min-width: 120px;
+        margin-right: 1em;
+    }
+    
+    .archive-title {
+        color: #333;
+        text-decoration: none;
+        flex: 1;
+    }
+    
+    .archive-title:hover {
+        color: #0066cc;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .post-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5em;
+        }
+        
+        .content-series h2, .recent-exciting h2, .archive-section h2 {
+            font-size: 1.5em;
+        }
+        
+        .archive-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .archive-date {
+            margin-bottom: 0.25em;
+            min-width: auto;
+        }
     }
 </style>

@@ -4,6 +4,7 @@ title: "Why Hollywood's AI Revolution Is Stuck in the Render Queue"
 date: 2024-10-24
 categories: [AI, VFX, Pipeline, Infrastructure]
 excerpt: "The gap between AI demos and production pipelines isn't about the technology—it's about the infrastructure that nobody wants to talk about."
+thumbnail_image: /images/ai-infrastructure-thumbnail.png
 ---
 
 Every VFX producer has had that moment: watching a 5-second AI demo that promises to revolutionize their workflow, only to realize it would take 5 days to integrate into their actual pipeline.

@@ -4,6 +4,7 @@ title: "The AI Brain: How Intelligence Processes Visual Data in VFX Production"
 date: 2024-10-28
 categories: [AI, VFX, Neural Networks, Processing]
 excerpt: "Understanding how AI 'thinks' about visual data is crucial for building better tools for VFX production. Here's what's happening inside the AI brain."
+thumbnail_image: /images/ai-brain-thumbnail.png
 ---
 
 Last month, I watched a VFX artist spend three hours trying to get an AI tool to generate the "right" background for their shot. They kept adjusting parameters, changing prompts, and tweaking settings. The AI kept producing variations that were technically correct but artistically wrong.

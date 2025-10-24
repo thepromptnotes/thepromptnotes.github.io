@@ -4,6 +4,7 @@ title: "The Visual Language of AI: How Computer Vision Translates to VFX Product
 date: 2024-10-27
 categories: [AI, VFX, Computer Vision, Technical]
 excerpt: "Understanding how AI 'sees' images isn't just academic—it's the foundation for building better AI tools for VFX production."
+thumbnail_image: /images/computer-vision-thumbnail.png
 ---
 
 Last week, I watched a VFX supervisor spend 20 minutes trying to explain to a client why their AI-generated background "looked wrong." The supervisor kept pointing to technical details—pixel accuracy, color matching, edge detection. The client kept saying, "I don't care about the technical stuff, just make it look right."

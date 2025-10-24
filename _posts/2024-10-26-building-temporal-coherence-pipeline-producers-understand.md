@@ -4,6 +4,7 @@ title: "Building a Temporal Coherence Pipeline That Producers Understand"
 date: 2024-10-26
 categories: [AI, VFX, Technical, Business]
 excerpt: "How to maintain consistency across frames while saving 40% on artist time—and why producers should care about the technical details."
+thumbnail_image: /images/temporal-coherence-thumbnail.png
 ---
 
 Last month, I watched a producer's eyes glaze over as an AI engineer explained temporal coherence algorithms. The producer's question was simple: "Will this save us money?" The engineer's answer was 20 minutes of technical jargon.
