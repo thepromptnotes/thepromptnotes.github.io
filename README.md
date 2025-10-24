@@ -176,3 +176,4 @@ Your content, your choice. Consider CC BY 4.0 for maximum impact.
 ---
 
 Need help? Open an issue or reach out!
+# Force GitHub Pages rebuild - Fri Oct 24 14:32:52 PDT 2025
