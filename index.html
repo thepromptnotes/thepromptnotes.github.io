@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<div class="home">
+    <header class="home-header">
+        <h1>{{ site.title }}</h1>
+        <p class="site-description">{{ site.description }}</p>
+    </header>
+    
+    <section class="recent-posts">
+        <h2>Recent Posts</h2>
+        <ul class="post-list">
+            {% for post in site.posts limit:10 %}
+            <li class="post-item">
+                <article>
+                    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                    <h3 class="post-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+                    {% if post.excerpt %}
+                    <div class="post-excerpt">
+                        {{ post.excerpt | strip_html | truncate: 200 }}
+                    </div>
+                    {% endif %}
+                    {% if post.cover_image %}
+                    <div class="post-cover">
+                        <img src="{{ post.cover_image }}" alt="{{ post.title }}" />
+                    </div>
+                    {% endif %}
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    
+    {% if site.posts.size > 10 %}
+    <div class="more-posts">
+        <a href="/archive">View all posts →</a>
+    </div>
+    {% endif %}
+</div>
+
+<style>
+    .home-header {
+        margin-bottom: 3em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .site-description {
+        color: #666;
+        font-size: 1.1em;
+        margin-top: 0.5em;
+    }
+    
+    .recent-posts h2 {
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
+        color: #555;
+    }
+    
+    .post-cover img {
+        margin-top: 1em;
+        border-radius: 4px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    
+    .more-posts {
+        margin-top: 2em;
+        text-align: center;
+    }
+    
+    .more-posts a {
+        font-weight: 500;
+    }
+</style>
